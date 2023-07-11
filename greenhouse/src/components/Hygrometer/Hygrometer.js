@@ -3,7 +3,9 @@ import "./Hygrometer.css";
 import { useClimate } from "../../context/ClimateContext";
 
 function Hygrometer() {
-  const {humidity, setHumidity} = useClimate();
+  const {temp, hum} = useClimate();
+  const [humidity, setHumidity] = hum;
+  
   return (
     <section>
       <h2>Hygrometer</h2>
