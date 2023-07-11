@@ -3,8 +3,9 @@ import './Thermometer.css';
 import { useClimate } from "../../context/ClimateContext";
 
 function Thermometer() {
-  const {temp, hum} = useClimate();
+  const {temp} = useClimate();
   const [temperature, setTemperature] = temp;
+
   return (
     <section>
       <h2>Thermometer</h2>
